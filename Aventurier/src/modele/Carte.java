@@ -5,12 +5,15 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Représente une carte chargée depuis un fichier texte.
+ */
 public class Carte {
     private char[][] carte;
     private int hauteur, largeur;
 
     /**
-     * Constructeur : Charge la carte depuis un fichier texte
+     * Constructeur : Charge la carte depuis un fichier texte.
      * @param fichierCarte Chemin du fichier contenant la carte
      * @throws IOException si le fichier ne peut être lu
      */
@@ -26,7 +29,7 @@ public class Carte {
     }
 
     /**
-     * Vérifie si une position donnée est accessible (espace vide ' ')
+     * Vérifie si une position donnée est accessible (espace vide ' ').
      * @param x Coordonnée X
      * @param y Coordonnée Y
      * @return true si le déplacement est possible, false sinon
@@ -39,32 +42,27 @@ public class Carte {
     }
 
     /**
-     * Récupère la largeur de la carte
+     * Récupère la largeur de la carte.
+     * @return La largeur en nombre de colonnes
      */
     public int getLargeur() {
         return largeur;
     }
 
     /**
-     * Récupère la hauteur de la carte
+     * Récupère la hauteur de la carte.
+     * @return La hauteur en nombre de lignes
      */
     public int getHauteur() {
         return hauteur;
     }
 
     /**
-     * Récupère la carte sous forme de tableau 2D
+     * Récupère la carte sous forme de tableau 2D.
+     * @return Un tableau 2D représentant la carte
      */
     public char[][] getCarte() {
         return carte;
     }
 
-
-	public void afficherCarte() {
-		System.out.println(" Carte chargée :");
-		for (char[] ligne : carte) {
-            System.out.println(new String(ligne));
-        }
-    }
-	
 }

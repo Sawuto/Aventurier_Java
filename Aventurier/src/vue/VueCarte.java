@@ -2,8 +2,15 @@ package vue;
 
 import modele.Carte;
 import modele.Hero;
-
+/**
+ * Classe responsable de l'affichage de la carte et du héros.
+ */
 public class VueCarte {
+	/**
+     * Affiche la carte avec la position du héros.
+     * @param carte La carte du jeu
+     * @param hero Le héros à afficher
+     */
 	public void afficherCarte(Carte carte, Hero hero) {
         char[][] grille = carte.getCarte();
         for (int y = 0; y < carte.getHauteur(); y++) {
