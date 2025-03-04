@@ -11,12 +11,12 @@ public class App {
         try {
             Carte carte = new Carte("/home/enzos/Téléchargements/carte.txt");
             Hero hero = new Hero(3, 0);
-            Deplacement controleur = new Deplacement(carte, hero);
+            Deplacement deplacement = new Deplacement(carte, hero);
             VueCarte vue = new VueCarte();
 
             String mouvements = "SSSSEEEEEENN";
             for (char direction : mouvements.toCharArray()) {
-                controleur.deplacer(direction);
+            	deplacement.deplacer(direction);
             }
 
             System.out.println("Carte après déplacements :");
