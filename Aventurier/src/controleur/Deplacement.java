@@ -62,6 +62,7 @@ public class Deplacement {
         if (carte.estAccessible(X, Y)) {
             hero.setPosition(X, Y);
             vueCarte.afficherCarte(carte, hero);
+            vueCarte.mettreAJourAffichage(carte, hero);
         }
     }
 }

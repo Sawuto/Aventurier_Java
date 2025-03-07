@@ -67,13 +67,16 @@ public class App {
             
             // Initialisation du héros et des déplacements
             Hero hero = new Hero(x, y);
-            VueCarte vueCarte = new VueCarte();
+            VueCarte vueCarte = new VueCarte(carte, hero);
             Deplacement deplacement = new Deplacement(carte, hero, vueCarte);
 
-            // Affichage de la carte initiale
+            // Affichage de la carte initiale dans la console
             vueCarte.afficherCarte(carte, hero);
             
-            //Affichage position initiale
+            // Affichage de la carte initiale 
+            vueCarte.mettreAJourAffichage(carte, hero);
+            
+            //Affichage position initiale dans la console
             System.out.println("Position actuelle : (" + hero.getX() +", " + hero.getY()+")");
             // Exécution des mouvements
             for (char direction : mouvements.toCharArray()) {

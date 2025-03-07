@@ -67,7 +67,7 @@ public class DeplacementTest {
         // Initialisation des objets
         carte = new Carte(fichierTemporaire.toString());
         hero = new Hero(1, 1); // Position initiale dans une case vide
-        vueCarte = new VueCarte();
+        vueCarte = new VueCarte(carte, hero);
         deplacement = new Deplacement(carte, hero, vueCarte);
 
     }
