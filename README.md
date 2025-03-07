@@ -1,23 +1,23 @@
 # **Projet : Déplacement du Héros sur une Carte**
 
-## 📌 Description
+## Description
 Ce projet est une application **Java** permettant de simuler le déplacement d'un héros sur une carte à partir d'un fichier de configuration.
 Le héros doit éviter les obstacles et respecter les limites de la carte.
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 - **Java 17+**
 - **Swing** (pour la sélection de fichiers)
 - **JUnit 4** (pour les tests unitaires)
 
 ---
 
-## 🚀 Installation & Exécution
+## Installation & Exécution
 ### 1. **Cloner le projet**
 ```sh
-git clone https://github.com/ton-repo/nom-du-projet.git
-cd nom-du-projet
+git clone https://github.com/Sawuto/Aventurier_java.git
+cd Aventurier
 ```
 
 ### 2. **Compiler le projet**
@@ -34,22 +34,30 @@ Une boîte de dialogue permettra de sélectionner les fichiers de configuration 
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 ```
-/nom-du-projet
-│── src/
-│   ├── App/          # Classe principale
-│   ├── controleur/   # Gestion des déplacements
-│   ├── modele/       # Classes de la carte et du héros
-│   ├── vue/          # Affichage de la carte
-│── test/             # Tests unitaires avec JUnit
-│── README.md         # Documentation du projet
-│── .gitignore        # Fichiers à ignorer dans Git
+/aventurier_java
+|── /Readme                  # Contient la documentation principale du projet
+|── /aventurier               # Dossier principal contenant le code source du jeu
+    ├── /src/                # Dossier source contenant tout le code Java
+    │   ├── /App/            # Classe principale, point d'entrée du jeu
+    │   ├── /controleur/     # Gestion des déplacements et des actions du héros
+    │   ├── /modele/         # Modèles représentant la carte, le héros, etc.
+    │   ├── /vue/            # Affichage de la carte et des éléments graphiques
+    │   ├── /test/           # Contient les tests unitaires utilisant JUnit
+    ├── /doc/                # Documentation du projet (par exemple, architecture, fonctionnements)
+    ├── /lib/                # Bibliothèques externes nécessaires au projet
+    │   ├── junit-4.13.2.jar         # Bibliothèque JUnit pour les tests
+    │   ├── hamcrest-core-1.3.jar    # Bibliothèque Hamcrest pour les tests
+    ├── /bin/                # Dossier contenant les fichiers compilés (.class)
+    ├── /fichier_test/       # Fichiers utilisés pour les tests du jeu (cartes, scénarios)
+    ├── .gitignore           # Fichiers ou dossiers à ignorer par Git (par exemple, compilations)
+
 ```
 
 ---
 
-## 📜 Fichiers requis
+## Fichiers requis
 ### 1. **Fichier de configuration**
 Doit contenir :
 ```
@@ -65,40 +73,36 @@ SSEE
 ### 2. **Fichier de carte**
 Représentation ASCII de la carte :
 ```
-#####
-#   #
-# # #
-#   #
-#####
+###    ######    ###
+###      ##      ###
+##     ##  ##     ##
+#      ##  ##      #
+##                ##
+#####          #####
+###### ##  ##  #####
+ #     ######     # 
+     ########       
+    ############    
+    ############    
+     ########      #
+ #     ######     ##
+###### ##  ## ######
+#####          #####
+##                ##
+#   ## #    # ##   #
+##   ##      ##   ##
+###    #    #    ###
+###    ######    ###
 ```
 
 ---
 
-## 🧪 Tests
+## Tests
 Les tests unitaires utilisent **JUnit 4**.
-Pour les exécuter :
-```sh
-javac -cp "libs/junit-4.13.2.jar;bin" -d bin test/*.java
-java -cp "libs/junit-4.13.2.jar;bin" org.junit.runner.JUnitCore test.CarteTest
-```
+
 
 ---
 
-## 💪 Contributions
-Les contributions sont les bienvenues !
 
-1. Forke le projet
-2. Crée une branche (`git checkout -b feature/ma-feature`)
-3. Fais un commit (`git commit -m "Ajout de ma feature"`)
-4. Pousse la branche (`git push origin feature/ma-feature`)
-5. Fais une **Pull Request** 🚀
-
----
-
-## 🏆 Licence
-Ce projet est sous licence **MIT**.
-
----
-
-📚 **Auteur** : [Ton Nom](https://github.com/ton-profil) | 🌐 [Repo GitHub](https://github.com/ton-repo/nom-du-projet)
+**Auteur** : Enzo Saccone (https://github.com/Sawuto) | 🌐 [Repo GitHub](https://github.com/ton-repo/nom-du-projet)
 
