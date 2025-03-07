@@ -57,21 +57,20 @@ Une boîte de dialogue permettra de sélectionner les fichiers de configuration 
 
 ---
 
-## Fichiers requis
-### 1. **Fichier de configuration**
-Doit contenir :
-```
-x,y
-Mouvements
-```
-**Exemple :**
-```
-1,1
-SSEE
-```
+## Sélection des fichiers
+Lors de l'exécution du programme, une boîte de dialogue s'ouvrira pour choisir les fichiers nécessaires :
 
-### 2. **Fichier de carte**
-Représentation ASCII de la carte :
+1. **Sélection du fichier de configuration**  
+   - Ce fichier doit contenir la position initiale du héros et la liste des déplacements.
+   - Exemple :
+     ```
+     1,1
+     SSEE
+     ```
+
+2. **Sélection du fichier de carte**  
+   - Ce fichier représente la carte en ASCII avec des `#` pour les murs et des espaces pour les zones accessibles.
+   - Exemple :
 ```
 ###    ######    ###
 ###      ##      ###
@@ -94,7 +93,7 @@ Représentation ASCII de la carte :
 ###    #    #    ###
 ###    ######    ###
 ```
-
+Une fois les fichiers sélectionnés, le programme chargera la carte et effectuera les déplacements du héros en évitant les obstacles et en respectant les limites.
 ---
 
 ## Tests
