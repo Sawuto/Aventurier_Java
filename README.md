@@ -44,7 +44,7 @@ Une boîte de dialogue permettra de sélectionner les fichiers de configuration 
     │   ├── /controleur/     # Gestion des déplacements et des actions du héros
     │   ├── /modele/         # Modèles représentant la carte, le héros, etc.
     │   ├── /vue/            # Affichage de la carte et des éléments graphiques
-    │   ├── /test/           # Contient les tests unitaires utilisant JUnit
+    ├── /test/           # Contient les tests unitaires utilisant JUnit
     ├── /doc/                # Documentation du projet (par exemple, architecture, fonctionnements)
     ├── /lib/                # Bibliothèques externes nécessaires au projet
     │   ├── junit-4.13.2.jar         # Bibliothèque JUnit pour les tests
