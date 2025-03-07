@@ -70,6 +70,11 @@ public class App {
             VueCarte vueCarte = new VueCarte();
             Deplacement deplacement = new Deplacement(carte, hero, vueCarte);
 
+            // Affichage de la carte initiale
+            vueCarte.afficherCarte(carte, hero);
+            
+            //Affichage position initiale
+            System.out.println("Position actuelle : (" + hero.getX() +", " + hero.getY()+")");
             // Exécution des mouvements
             for (char direction : mouvements.toCharArray()) {
                 deplacement.deplacer(direction);
