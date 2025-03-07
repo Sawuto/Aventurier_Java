@@ -104,5 +104,5 @@ Les tests unitaires utilisent **JUnit 4**.
 ---
 
 
-**Auteur** : Enzo Saccone (https://github.com/Sawuto) | 🌐 [Repo GitHub](https://github.com/ton-repo/nom-du-projet)
+**Auteur** : Enzo Saccone (https://github.com/Sawuto) | 🌐 [Repo GitHub](https://github.com/Sawuto/Aventurier_Java.git)
 
