@@ -16,8 +16,8 @@ Le héros doit éviter les obstacles et respecter les limites de la carte.
 ## Installation & Exécution
 ### 1. **Cloner le projet**
 ```sh
-git clone https://github.com/Sawuto/Aventurier_java.git
-cd Aventurier
+git clone [https://github.com/Sawuto/Aventurier_java.git](https://github.com/Sawuto/Aventurier_Java.git)
+cd Aventurier_java
 ```
 
 ### 2. **Compiler le projet**
