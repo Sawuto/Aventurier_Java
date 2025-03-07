@@ -7,7 +7,7 @@ Le héros doit éviter les obstacles et respecter les limites de la carte.
 ---
 
 ## Technologies utilisées
-- **Java 17+**
+- **Java 21**
 - **Swing** (pour la sélection de fichiers)
 - **JUnit 4** (pour les tests unitaires)
 
