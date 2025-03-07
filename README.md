@@ -98,7 +98,12 @@ Une fois les fichiers sélectionnés, le programme chargera la carte et effectue
 
 ## Tests
 Les tests unitaires utilisent **JUnit 4**.
-Pour les exécuter :
+
+Configuration des bibliothèques
+Assurez-vous d'ajouter **JUnit** et **Hamcrest** dans le dossier `lib` et de les inclure dans le **Build Path** de votre projet.
+
+Exécution des tests
+Pour exécuter les tests :
 ```sh
 javac -cp "libs/junit-4.13.2.jar;bin" -d bin test/*.java
 java -cp "libs/junit-4.13.2.jar;bin" org.junit.runner.JUnitCore test.CarteTest
