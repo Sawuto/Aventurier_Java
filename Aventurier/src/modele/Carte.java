@@ -6,7 +6,8 @@ import java.nio.file.Paths;
 import java.util.List;
 
 /**
- * Représente une carte chargée depuis un fichier texte.
+ * Représente une carte 2D chargée depuis un fichier texte.
+ * La carte est constituée d'un tableau de caractères où chaque caractère représente une case.
  */
 public class Carte {
     private char[][] carte;

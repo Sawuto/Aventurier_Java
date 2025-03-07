@@ -2,6 +2,7 @@ package modele;
 
 /**
  * Représente un héros qui peut se déplacer sur la carte.
+ * Le héros possède une position (x, y) et peut se déplacer dans les 4 directions cardinales.
  */
 public class Hero {
 
